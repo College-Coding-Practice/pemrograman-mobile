@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context=".login">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="371dp"
+        android:layout_height="600dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="20dp"
+        android:elevation="120dp"
+        android:layout_marginBottom="83dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardBackgroundColor="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="250dp"
+                android:layout_marginTop="80dp"
+                android:text="LOG IN"
+                android:textColor="@color/black"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteX="138dp"
+                tools:layout_editor_absoluteY="270dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="350dp"
+                android:background="@drawable/edtext_bg"
+                android:drawableLeft="@drawable/ic_baseline_person_24"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:hint="Usename"
+                android:inputType="textPersonName"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="359dp" />
+
+            <EditText
+                android:layout_width="300dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:drawableLeft="@drawable/ic_baseline_lock_24"
+                android:drawablePadding="18dp"
+                android:ems="10"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingStart="20dp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="430dp"
+                tools:layout_editor_absoluteX="45dp"
+                tools:layout_editor_absoluteY="433dp" />
+
+            <com.google.android.material.button.MaterialButton
+                layout_centerHorizontal="true"
+                android:layout_width="280dp"
+                android:layout_height="55dp"
+                android:background="@drawable/edtext_bg"
+                android:backgroundTint="#25587E"
+                android:text="LOGIN"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="530dp"
+                android:textColor="@color/white"
+                android:id="@+id/btnLogin"
+
+                />
+
+            <ImageView
+
+
+
+                android:id="@+id/imageView"
+                android:layout_width="256dp"
+                android:layout_height="193dp"
+                android:layout_centerHorizontal="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/head2"
+                tools:layout_editor_absoluteY="7dp" />
+
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
